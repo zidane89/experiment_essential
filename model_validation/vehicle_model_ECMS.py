@@ -16,7 +16,7 @@ class Environment_ECMS:
         self.version = 1
 
         self.vehicle_comp = {
-            "m_veh": 900,
+            "m_veh": 1200,
             "cd": 0.456,
             "fa": 2.4,
             "rr": 0.009,
@@ -27,7 +27,7 @@ class Environment_ECMS:
             "g": 9.8,
         }
         self.stack_comp = {
-            "cell_number": 500,
+            "cell_number": 400,
             "effective_area_cell": 200.0,
             "max_current_density": 1.0,
             "idling_current_density": 0.00001,

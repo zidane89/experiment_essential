@@ -9,7 +9,7 @@ from scipy import interpolate
 import pickle
 
 
-class Environment_DDPG:
+class Environment:
     def __init__(self, cell_model, cycle_path, battery_path, motor_path, reward_factor):
         self.cell_model = cell_model
         self.reward_factor = reward_factor
@@ -17,7 +17,7 @@ class Environment_DDPG:
         self.version = 1
 
         self.vehicle_comp = {
-            "m_veh": 900,
+            "m_veh": 1200,
             "cd": 0.456,
             "fa": 2.4,
             "rr": 0.009,

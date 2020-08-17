@@ -261,6 +261,9 @@ class Environment:
         if np.isnan(del_i):
             condition = False
 
+        if self.SOC < 0:
+            condition = False
+
         return condition
 
     def get_battery_state(self):
